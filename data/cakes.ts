@@ -1,151 +1,222 @@
-export interface Cake {
-  id: number;
-  name: string;
+export interface ProductVariant {
+  label: string;
   price: number;
-  image: string;
-  category: string;
-  description: string;
 }
 
-export const cakes: Cake[] = [
-  // Birthday Cakes
+export type ProductType = "cake" | "cupcake" | "glass-cake";
+
+export interface Product {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+  type: ProductType;
+  variants: ProductVariant[];
+}
+
+/* =========================================================
+   CAKES
+========================================================= */
+
+export const cakes: Product[] = [
   {
-    id: 1,
-    name: "Chocolate Dream Cake",
-    price: 45,
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop",
-    category: "Birthday Cakes",
-    description: "Rich chocolate layers with creamy chocolate ganache",
+    id: "chocolate-cake",
+    name: "Chocolate Cake",
+    image: "/images/cake1.jpeg",
+    description:
+      "Rich and moist chocolate cake made with premium chocolate and a smooth creamy frosting.",
+    type: "cake",
+    variants: [
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 1900 },
+      { label: "3 Pounds", price: 2800 },
+      { label: "4 Pounds", price: 3700 },
+    ],
   },
+
   {
-    id: 2,
-    name: "Vanilla Rainbow Cake",
-    price: 50,
-    image: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500&h=500&fit=crop",
-    category: "Birthday Cakes",
-    description: "Colorful vanilla sponge with buttercream frosting",
+    id: "vanilla-cake",
+    name: "Vanilla Cake",
+    image: "/images/cake2.jpeg",
+    description:
+      "Soft vanilla sponge layered with delicious cream for a perfect sweet celebration.",
+    type: "cake",
+    variants: [
+      { label: "1 Pound", price: 900 },
+      { label: "2 Pounds", price: 1700 },
+      { label: "3 Pounds", price: 2500 },
+      { label: "4 Pounds", price: 3300 },
+    ],
   },
+
   {
-    id: 3,
-    name: "Strawberry Bliss Cake",
-    price: 48,
-    image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&h=500&fit=crop",
-    category: "Birthday Cakes",
-    description: "Fresh strawberries with light vanilla cream",
+    id: "red-velvet",
+    name: "Red Velvet Cake",
+    image: "/images/cake3.jpeg",
+    description:
+      "Classic red velvet cake with soft layers and creamy cheese frosting.",
+    type: "cake",
+    variants: [
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2300 },
+      { label: "3 Pounds", price: 3400 },
+      { label: "4 Pounds", price: 4500 },
+    ],
   },
+
   {
-    id: 4,
-    name: "Funfetti Party Cake",
-    price: 42,
-    image: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=500&h=500&fit=crop",
-    category: "Birthday Cakes",
-    description: "Classic birthday cake with colorful sprinkles",
+    id: "black-forest",
+    name: "Black Forest Cake",
+    image: "/images/cake4.jpeg",
+    description:
+      "A delicious combination of chocolate sponge, cream and cherries.",
+    type: "cake",
+    variants: [
+      { label: "1 Pound", price: 1100 },
+      { label: "2 Pounds", price: 2100 },
+      { label: "3 Pounds", price: 3100 },
+      { label: "4 Pounds", price: 4100 },
+    ],
   },
-  // Wedding Cakes
+
   {
-    id: 5,
-    name: "Elegant White Wedding Cake",
-    price: 150,
-    image: "https://images.unsplash.com/photo-1522767131822-6ac69f04f2e0?w=500&h=500&fit=crop",
-    category: "Wedding Cakes",
-    description: "Three-tier white cake with delicate sugar flowers",
-  },
-  {
-    id: 6,
-    name: "Rustic Naked Cake",
-    price: 120,
-    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500&h=500&fit=crop",
-    category: "Wedding Cakes",
-    description: "Beautiful semi-naked cake with fresh berries",
-  },
-  {
-    id: 7,
-    name: "Royal Gold Tier Cake",
-    price: 180,
-    image: "https://images.unsplash.com/photo-1562777718-114368da8782?w=500&h=500&fit=crop",
-    category: "Wedding Cakes",
-    description: "Luxurious four-tier cake with gold accents",
-  },
-  {
-    id: 8,
-    name: "Floral Garden Wedding Cake",
-    price: 160,
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&h=500&fit=crop",
-    category: "Wedding Cakes",
-    description: "Romantic cake adorned with handcrafted sugar flowers",
-  },
-  // Independence Day Cakes
-  {
-    id: 9,
-    name: "Patriotic Flag Cake",
-    price: 55,
-    image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&h=500&fit=crop",
-    category: "Independence Day Cakes",
-    description: "Red, white, and blue layered celebration cake",
-  },
-  {
-    id: 10,
-    name: "Freedom Star Cake",
-    price: 52,
-    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&h=500&fit=crop",
-    category: "Independence Day Cakes",
-    description: "Star-shaped cake with festive decorations",
-  },
-  {
-    id: 11,
-    name: "Liberty Bell Cake",
-    price: 60,
-    image: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500&h=500&fit=crop",
-    category: "Independence Day Cakes",
-    description: "Bell-shaped cake with patriotic theme",
-  },
-  {
-    id: 12,
-    name: "Celebration Cupcake Set",
-    price: 35,
-    image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&h=500&fit=crop",
-    category: "Independence Day Cakes",
-    description: "Set of 12 themed cupcakes",
-  },
-  // Custom Cakes
-  {
-    id: 13,
-    name: "Photo Custom Cake",
-    price: 65,
-    image: "https://images.unsplash.com/photo-1557979619-445218f326b9?w=500&h=500&fit=crop",
-    category: "Custom Cakes",
-    description: "Personalized cake with your photo printed on top",
-  },
-  {
-    id: 14,
-    name: "3D Character Cake",
-    price: 85,
-    image: "https://images.unsplash.com/photo-1542826438-bd32f43d686f?w=500&h=500&fit=crop",
-    category: "Custom Cakes",
-    description: "Custom sculpted character cake",
-  },
-  {
-    id: 15,
-    name: "Number Shape Cake",
-    price: 70,
-    image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&h=500&fit=crop",
-    category: "Custom Cakes",
-    description: "Number-shaped cake perfect for milestones",
-  },
-  {
-    id: 16,
-    name: "Heart Shaped Love Cake",
-    price: 58,
-    image: "https://images.unsplash.com/photo-1591382696684-38c4273ae0c7?w=500&h=500&fit=crop",
-    category: "Custom Cakes",
-    description: "Romantic heart-shaped cake for special moments",
+    id: "purple-forest",
+    name: "Purple Forest Cake",
+    image: "/images/cake5.jpeg",
+    description:
+      "A delicious combination of chocolate sponge, cream and cherries.",
+    type: "cake",
+    variants: [
+      { label: "1 Pound", price: 1100 },
+      { label: "2 Pounds", price: 2100 },
+      { label: "3 Pounds", price: 3100 },
+      { label: "4 Pounds", price: 4100 },
+    ],
   },
 ];
 
-export const categories = [
-  "All",
-  "Birthday Cakes",
-  "Wedding Cakes",
-  "Independence Day Cakes",
-  "Custom Cakes",
+/* =========================================================
+   CUPCAKES
+========================================================= */
+
+export const cupcakes: Product[] = [
+  {
+    id: "chocolate-cupcake",
+    name: "Chocolate Cupcake",
+    image: "/images/cupcake1.jpeg",
+    description:
+      "Delicious chocolate cupcakes topped with smooth and creamy frosting.",
+    type: "cupcake",
+    variants: [
+      { label: "6 Cupcakes", price: 800 },
+      { label: "12 Cupcakes", price: 1600 },
+    ],
+  },
+
+  {
+    id: "vanilla-cupcake",
+    name: "Vanilla Cupcake",
+    image: "/images/cupcake2.jpeg",
+    description:
+      "Soft and fluffy vanilla cupcakes with delicious creamy topping.",
+    type: "cupcake",
+    variants: [
+      { label: "6 Cupcakes", price: 800 },
+      { label: "12 Cupcakes", price: 1600 },
+    ],
+  },
+
+  {
+    id: "red-velvet-cupcake",
+    name: "Red Velvet Cupcake",
+    image: "/images/cupcake3.jpeg",
+    description:
+      "Soft red velvet cupcakes finished with rich creamy frosting.",
+    type: "cupcake",
+    variants: [
+      { label: "6 Cupcakes", price: 800 },
+      { label: "12 Cupcakes", price: 1600 },
+    ],
+  },
+
+  {
+    id: "lotus-cupcake",
+    name: "Lotus Cupcake",
+    image: "/images/cupcake4.jpeg",
+    description:
+      "Creamy Lotus cupcakes made with delicious Lotus spread.",
+    type: "cupcake",
+    variants: [
+      { label: "6 Cupcakes", price: 800 },
+      { label: "12 Cupcakes", price: 1600 },
+    ],
+  },
+];
+
+/* =========================================================
+   GLASS CAKES
+========================================================= */
+
+export const glassCakes: Product[] = [
+  {
+    id: "chocolate-glass",
+    name: "Chocolate Glass Cake",
+    image: "/images/glass1.jpeg",
+    description:
+      "Rich chocolate dessert beautifully layered and served in a glass.",
+    type: "glass-cake",
+    variants: [
+      { label: "6 Glass Cakes", price: 1200 },
+      { label: "12 Glass Cakes", price: 2400 },
+    ],
+  },
+
+  {
+    id: "lotus-glass",
+    name: "Lotus Glass Cake",
+    image: "/images/glass2.jpeg",
+    description:
+      "Creamy Lotus dessert beautifully layered and served in a glass.",
+    type: "glass-cake",
+    variants: [
+      { label: "6 Glass Cakes", price: 1200 },
+      { label: "12 Glass Cakes", price: 2400 },
+    ],
+  },
+
+  {
+    id: "red-velvet-glass",
+    name: "Red Velvet Glass Cake",
+    image: "/images/glass3.jpeg",
+    description:
+      "Delicious red velvet dessert with creamy layers served in a glass.",
+    type: "glass-cake",
+    variants: [
+      { label: "6 Glass Cakes", price: 1200 },
+      { label: "12 Glass Cakes", price: 2400 },
+    ],
+  },
+
+  {
+    id: "oreo-glass",
+    name: "Oreo Glass Cake",
+    image: "/images/brownies1.jpeg",
+    description:
+      "Creamy Oreo dessert layered with chocolate and crushed Oreo cookies.",
+    type: "glass-cake",
+    variants: [
+      { label: "6 Glass Cakes", price: 1200 },
+      { label: "12 Glass Cakes", price: 2400 },
+    ],
+  },
+];
+
+/* =========================================================
+   ALL PRODUCTS
+========================================================= */
+
+export const allProducts: Product[] = [
+  ...cakes,
+  ...cupcakes,
+  ...glassCakes,
 ];

@@ -21,7 +21,6 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/cakes", label: "Our Cakes" },
-    { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -39,7 +38,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.jpeg"
                 alt="MS Cakes Logo"
                 width={50}
                 height={50}
@@ -205,7 +204,7 @@ function CartDrawer() {
             <div className="space-y-4">
               {cart.map((item) => (
                 <div
-                  key={item.id}
+                  key={item.cartId}
                   className="flex gap-4 p-4 bg-cream rounded-xl"
                 >
                   <img
@@ -222,7 +221,7 @@ function CartDrawer() {
                     </p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        onClick={() => updateQuantity(item.cartId, item.quantity - 1)}
                         className="w-8 h-8 rounded-full bg-white border border-pink-primary flex items-center justify-center hover:bg-soft-pink transition-colors font-bold text-foreground"
                       >
                         −
@@ -231,13 +230,13 @@ function CartDrawer() {
                         {item.quantity}
                       </span>
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        onClick={() => updateQuantity(item.cartId, item.quantity + 1)}
                         className="w-8 h-8 rounded-full bg-white border border-pink-primary flex items-center justify-center hover:bg-soft-pink transition-colors font-bold text-foreground"
                       >
                         +
                       </button>
                       <button
-                        onClick={() => removeFromCart(item.id)}
+                        onClick={() => removeFromCart(item.cartId)}
                         className="ml-auto text-red-500 hover:text-red-600 transition-colors"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

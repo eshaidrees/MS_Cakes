@@ -3,9 +3,7 @@ import Footer from "@/components/ui/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import CategoriesSection from "@/components/CategoriesSection";
 import FeaturedCakes from "@/components/FeaturedCakes";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 
 export default function Home() {
@@ -14,10 +12,8 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <AboutSection />
-        <CategoriesSection />
         <FeaturedCakes />
-        <TestimonialsSection />
+        <AboutSection />
         <CTASection />
       </main>
       <Footer />

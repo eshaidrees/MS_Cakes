@@ -1,80 +1,102 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import CakeCard from "@/components/ui/CakeCard";
-import { cakes, categories } from "@/data/cakes";
+import {
+  cakes,
+  cupcakes,
+  glassCakes,
+} from "@/data/cakes";
 
 export default function CakesPageContent() {
-  const searchParams = useSearchParams();
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
-  // Get category from URL query parameter
-  useEffect(() => {
-    const category = searchParams.get("category");
-    if (category && categories.includes(category)) {
-      setSelectedCategory(category);
-    }
-  }, [searchParams]);
-
-  const filteredCakes =
-    selectedCategory === "All"
-      ? cakes
-      : cakes.filter((cake) => cake.category === selectedCategory);
-
   return (
-    <section className="py-12 min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <span className="inline-block bg-pink-primary/30 text-foreground px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            Our Collection
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-            Our Delicious Cakes
+    <section className="min-h-screen bg-[#fffaf7] px-5 py-16 md:px-8 md:py-20">
+      <div className="mx-auto max-w-7xl">
+
+        {/* ================= HEADER ================= */}
+
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-[#b77b61]">
+            Freshly Made
+          </p>
+
+          <h1 className="font-heading text-4xl font-bold text-foreground md:text-5xl">
+            Our Delicious Collection
           </h1>
-          <p className="text-lg text-text-light max-w-2xl mx-auto">
-            Browse through our amazing selection of handcrafted cakes
+
+          <p className="mx-auto mt-4 max-w-2xl text-text-light">
+            Explore our delicious cakes, cupcakes and
+            glass cakes, freshly prepared for every
+            special occasion.
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                selectedCategory === category
-                  ? "bg-pink-primary text-white shadow-md"
-                  : "bg-white text-foreground hover:bg-soft-pink border border-pink-primary/30"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        {/* ================= CAKES ================= */}
 
-        {/* Cakes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredCakes.map((cake) => (
-            <CakeCard key={cake.id} cake={cake} />
-          ))}
-        </div>
+        <ProductSection
+          title="Our Cakes"
+          description="Beautiful and delicious cakes for every special occasion."
+          products={cakes}
+        />
 
-        {/* No Results */}
-        {filteredCakes.length === 0 && (
-          <div className="text-center py-20">
-            <span className="text-6xl mb-4 block">🍰</span>
-            <h3 className="text-2xl font-bold text-foreground mb-2 font-heading">
-              No cakes found
-            </h3>
-            <p className="text-text-light">
-              Try selecting a different category
-            </p>
-          </div>
-        )}
+        {/* ================= CUPCAKES ================= */}
+
+        <ProductSection
+          title="Our Cupcakes"
+          description="Perfect little treats for birthdays, parties and celebrations."
+          products={cupcakes}
+        />
+
+        {/* ================= GLASS CAKES ================= */}
+
+        <ProductSection
+          title="Our Glass Cakes"
+          description="Creamy layered desserts beautifully served in a glass."
+          products={glassCakes}
+          last
+        />
+
       </div>
     </section>
+  );
+}
+
+/* =========================================================
+   PRODUCT SECTION
+========================================================= */
+
+function ProductSection({
+  title,
+  description,
+  products,
+  last = false,
+}: {
+  title: string;
+  description: string;
+  products: typeof cakes;
+  last?: boolean;
+}) {
+  return (
+    <div className={last ? "" : "mb-20"}>
+
+      <div className="mb-8">
+        <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
+          {title}
+        </h2>
+
+        <p className="mt-2 text-text-light">
+          {description}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {products.map((product) => (
+          <CakeCard
+            key={product.id}
+            cake={product}
+          />
+        ))}
+      </div>
+
+    </div>
   );
 }

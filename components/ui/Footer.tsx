@@ -50,11 +50,7 @@ export default function Footer() {
                   Our Cakes
                 </Link>
               </li>
-              <li>
-                <Link href="/gallery" className="text-text-light hover:text-accent-brown transition-colors">
-                  Gallery
-                </Link>
-              </li>
+             
               <li>
                 <Link href="/contact" className="text-text-light hover:text-accent-brown transition-colors">
                   Contact

@@ -3,6 +3,7 @@ import { Playfair_Display, Poppins } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import Navbar from "@/components/ui/Navbar";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",

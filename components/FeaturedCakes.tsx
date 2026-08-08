@@ -1,42 +1,60 @@
 import CakeCard from "./ui/CakeCard";
-import { cakes } from "@/data/cakes";
+import {
+  cakes,
+  cupcakes,
+  glassCakes,
+} from "@/data/cakes";
 import Link from "next/link";
 
 export default function FeaturedCakes() {
-  const featuredCakes = cakes.slice(0, 8);
+  // Cakes + Cupcakes + Glass Cakes
+  const featuredProducts = [
+    ...cakes,
+    ...cupcakes,
+    ...glassCakes,
+  ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="bg-[#fffaf7] px-5 py-16 md:px-8 md:py-20">
+      <div className="mx-auto max-w-7xl">
+
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block bg-pink-primary/30 text-foreground px-4 py-2 rounded-full text-sm font-semibold mb-4">
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-[#b77b61]">
             Our Collection
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-            Featured Cakes
+          </p>
+
+          <h2 className="font-heading text-4xl font-bold text-foreground md:text-5xl">
+            Featured Treats
           </h2>
-          <p className="text-lg text-text-light max-w-2xl mx-auto">
-            Discover our most popular and beloved cake creations
+
+          <p className="mx-auto mt-4 max-w-2xl text-text-light">
+            Discover our delicious cakes, cupcakes and
+            glass cakes, freshly made for every special
+            occasion.
           </p>
         </div>
 
-        {/* Cakes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuredCakes.map((cake) => (
-            <CakeCard key={cake.id} cake={cake} />
-          ))}
-        </div>
+        {/* Products Grid */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+           {featuredProducts.map((product) => (
+          <CakeCard
+          key={product.id}
+          cake={product}
+          />
+         ))}
+     </div>
 
         {/* View All Button */}
-        <div className="text-center mt-12">
+        <div className="mt-12 text-center">
           <Link
             href="/cakes"
-            className="inline-block bg-pink-primary hover:bg-accent-brown text-foreground hover:text-white font-semibold px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+            className="inline-block rounded-full bg-pink-primary px-10 py-4 font-semibold text-foreground shadow-md transition-all duration-300 hover:bg-accent-brown hover:text-white hover:shadow-lg"
           >
-            View All Cakes
+            View All Collection
           </Link>
         </div>
+
       </div>
     </section>
   );
