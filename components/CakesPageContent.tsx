@@ -4,16 +4,82 @@ import CakeCard from "@/components/ui/CakeCard";
 import {
   cakes,
   cupcakes,
-  glassCakes,
+  dessertCup,
 } from "@/data/cakes";
+
+
+const birthdayCakes = cakes.filter(
+  (cake) => cake.category === "birthday"
+);
+
+const weddingCakes = cakes.filter(
+  (cake) => cake.category === "wedding"
+);
+
+const independenceCakes = cakes.filter(
+  (cake) => cake.category === "independence"
+);
+
+const customCakes = cakes.filter(
+  (cake) => cake.category === "custom"
+);
+
 
 export default function CakesPageContent() {
   return (
     <section className="min-h-screen bg-[#fffaf7] px-5 py-16 md:px-8 md:py-20">
       <div className="mx-auto max-w-7xl">
 
-        {/* ================= HEADER ================= */}
+        {/* ================= CATEGORY NAVIGATION ================= */}
+        <div className="sticky top-16 z-30 mb-10 w-full rounded-xl bg-white/95 p-2.5 shadow-md backdrop-blur-md sm:top-20 sm:mb-14 sm:rounded-2xl sm:p-4">
 
+          {/* Mobile: horizontal scroll */}
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide sm:flex-wrap sm:justify-center sm:overflow-visible">
+
+            <a
+              href="#birthday"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              🎂 Birthday Cakes
+            </a>
+
+            <a
+              href="#wedding"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              💍 Wedding Cakes
+            </a>
+
+            <a
+              href="#custom"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              🎨 Custom Cakes
+            </a>
+
+            <a
+              href="#independence"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              🇵🇰 Independence Cakes
+            </a>
+
+            <a
+              href="#cupcakes"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              🧁 Cupcakes
+            </a>
+
+            <a
+              href="#dessert"
+              className="shrink-0 rounded-full bg-pink-100 px-3.5 py-2 text-xs font-medium text-gray-700 transition hover:bg-pink-500 hover:text-white sm:px-5 sm:py-3 sm:text-sm"
+            >
+              🍨 Dessert Cups
+            </a>
+
+          </div>
+          </div>
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-[#b77b61]">
             Freshly Made
@@ -25,35 +91,61 @@ export default function CakesPageContent() {
 
           <p className="mx-auto mt-4 max-w-2xl text-text-light">
             Explore our delicious cakes, cupcakes and
-            glass cakes, freshly prepared for every
+            dessert Cup, freshly prepared for every
             special occasion.
           </p>
         </div>
 
         {/* ================= CAKES ================= */}
 
-        <ProductSection
-          title="Our Cakes"
-          description="Beautiful and delicious cakes for every special occasion."
-          products={cakes}
-        />
+        <section id="birthday" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="🎂 Birthday Cakes"
+            description="Beautiful birthday cakes for every celebration."
+            products={birthdayCakes}
+          />
+        </section>
 
-        {/* ================= CUPCAKES ================= */}
+        <section id="wedding" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="💍 Wedding Cakes"
+            description="Elegant wedding cakes crafted for your special day."
+            products={weddingCakes}
+          />
+        </section>
 
-        <ProductSection
-          title="Our Cupcakes"
-          description="Perfect little treats for birthdays, parties and celebrations."
-          products={cupcakes}
-        />
+        <section id="custom" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="🎨 Custom Cakes"
+            description="Personalized cakes made exactly the way you want."
+            products={customCakes}
+          />
+        </section> 
 
-        {/* ================= GLASS CAKES ================= */}
+        <section id="independence" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="🇵🇰 Independence Day Cakes"
+            description="Celebrate with patriotic themed cakes."
+            products={independenceCakes}
+          />
+        </section>
 
-        <ProductSection
-          title="Our Glass Cakes"
-          description="Creamy layered desserts beautifully served in a glass."
-          products={glassCakes}
-          last
-        />
+        <section id="cupcakes" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="🧁 Cupcakes"
+            description="Perfect little treats for every occasion."
+            products={cupcakes}
+          />
+        </section>
+
+        <section id="dessert" className="scroll-mt-28 text-center">
+          <ProductSection
+            title="🍨 Dessert Cups"
+            description="Creamy layered desserts served in elegant cups."
+            products={dessertCup}
+            last
+          />
+        </section>
 
       </div>
     </section>

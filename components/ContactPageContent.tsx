@@ -219,18 +219,6 @@ export default function ContactPageContent() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-cream rounded-2xl overflow-hidden shadow-sm">
-              <div className="h-64 bg-pink-primary/10 flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl mb-4 block">🗺️</span>
-                  <p className="text-text-light font-medium">
-                    Find us on Google Maps
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Follow Us */}
             <div className="bg-cream rounded-2xl p-8 shadow-sm">
               <h3 className="text-xl font-bold text-foreground mb-4 font-heading">

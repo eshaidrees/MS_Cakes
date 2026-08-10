@@ -30,8 +30,8 @@ export default function CakeCard({
 
         {/* Type Badge */}
         <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold capitalize text-[#6b4636] shadow-sm">
-          {cake.type === "glass-cake"
-            ? "Glass Cake"
+          {cake.type === "dessert-cup"
+            ? "Dessert Cup"
             : cake.type}
         </span>
       </div>

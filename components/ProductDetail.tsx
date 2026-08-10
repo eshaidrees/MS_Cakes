@@ -42,7 +42,6 @@ export default function ProductDetail({
 
   return (
     <main className="min-h-screen bg-[#fffaf7] px-5 py-12 md:px-8 md:py-20">
-
       <div className="mx-auto max-w-6xl">
 
         {/* Back */}
@@ -77,7 +76,7 @@ export default function ProductDetail({
           <div className="flex flex-col justify-center p-7 md:p-12">
 
             <span className="mb-4 w-fit rounded-full bg-pink-primary/20 px-4 py-2 text-sm font-semibold capitalize text-accent-brown">
-              {product.type === "glass-cake"
+              {product.type === "dessert-cup"
                 ? "Glass Cake"
                 : product.type}
             </span>

@@ -40,8 +40,8 @@ export default function Navbar() {
               <Image
                 src="/images/logo.jpeg"
                 alt="MS Cakes Logo"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 className="object-contain flex-shrink-0 w-8 h-8 md:w-10 md:h-10"
               />
               <span className="text-xl md:text-2xl font-bold text-foreground font-heading">

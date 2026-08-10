@@ -14,7 +14,7 @@ export interface CartItem {
   name: string;
   image: string;
   description: string;
-  type: "cake" | "cupcake" | "glass-cake";
+  type: "cake" | "cupcake" | "dessert-cup";
   variant: string;
   price: number;
   quantity: number;
@@ -25,7 +25,7 @@ interface AddToCartItem {
   name: string;
   image: string;
   description: string;
-  type: "cake" | "cupcake" | "glass-cake";
+  type: "cake" | "cupcake" | "dessert-cup";
   variant: string;
   price: number;
 }

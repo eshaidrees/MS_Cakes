@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
-import Image from "next/image";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer"
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "MS Cakes - Handcrafted with Love",
+  title: "MS Cakes And Bakes - Handcrafted with Love",
   description: "Delicious homemade cakes for all your special occasions. Birthday, wedding, custom cakes and more!",
   icons: {
     icon: "/images/logo.png",
@@ -37,7 +37,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>
+          <Navbar/>
           {children}
+          <Footer/>
         </CartProvider>
       </body>
     </html>

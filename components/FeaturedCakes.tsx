@@ -2,7 +2,7 @@ import CakeCard from "./ui/CakeCard";
 import {
   cakes,
   cupcakes,
-  glassCakes,
+  dessertCup,
 } from "@/data/cakes";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function FeaturedCakes() {
   const featuredProducts = [
     ...cakes,
     ...cupcakes,
-    ...glassCakes,
+    ...dessertCup,
   ];
 
   return (

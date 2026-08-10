@@ -10,10 +10,10 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.jpeg"
                 alt="MS Cakes Logo"
-                width={36}
-                height={36}
+                width={50}
+                height={50}
                 className="object-contain flex-shrink-0 w-7 h-7 md:w-9 md:h-9"
               />
               <h3 className="text-xl md:text-2xl font-bold text-foreground font-heading">

@@ -320,11 +320,10 @@ export default function CartPageContent() {
                 Order via WhatsApp
               </button>
 
-              {/* Continue Shopping */}
 
               <Link
                 href="/cakes"
-                className="block w-full rounded-xl border border-pink-primary/30 bg-white py-3 text-center font-medium text-foreground transition-all duration-200 hover:bg-soft-pink"
+                className="mt-3 block w-full rounded-xl border border-pink-primary/30 bg-white py-3 text-center font-medium text-foreground hover:bg-soft-pink"
               >
                 Continue Shopping
               </Link>
