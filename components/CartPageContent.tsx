@@ -15,36 +15,55 @@ export default function CartPageContent() {
     clearCart,
   } = useCart();
 
-  const handleWhatsAppOrder = () => {
-    const phoneNumber = "923198531082";
+ const handleWhatsAppOrder = () => {
+  const phoneNumber = "923198531082";
 
-    let message = "🎂 *New Order from MS Cakes*\n\n";
+  const WEBSITE_URL =
+    "https://mscakesandbakes.vercel.app";
 
-    cart.forEach((item) => {
-      message += `• ${item.name}`;
+  let message = `🎂 *MS Cakes & Bakes*
 
-      if (item.variant) {
-        message += ` (${item.variant})`;
-      }
+━━━━━━━━━━━━━━━━━━━━━━
 
-      message += ` x${item.quantity}`;
+🛒 *CURRENT CART*
 
-      message += ` - Rs. ${(
-        item.price * item.quantity
-      ).toLocaleString()}\n`;
-    });
+`;
 
-    message += `\n💰 *Total: Rs. ${getTotalPrice().toLocaleString()}*\n\n`;
+  cart.forEach((item, index) => {
+    const imageUrl = item.image.startsWith("http")
+      ? item.image
+      : `${WEBSITE_URL}${item.image}`;
 
-    message += "Please confirm my order. Thank you!";
+    message += `${index + 1}. 🍰 *${item.name}*
+`;
 
-    const encodedMessage = encodeURIComponent(message);
+    if (item.variant) {
+      message += `Option: ${item.variant}
+`;
+    }
 
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
-  };
+    message += `Quantity: ${item.quantity}
+Price: Rs. ${item.price.toLocaleString()}
+Subtotal: Rs. ${(item.price * item.quantity).toLocaleString()}
+🖼️ Image: ${imageUrl}
+
+━━━━━━━━━━━━━━━━━━━━━━
+`;
+  });
+
+  message += `
+💰 *TOTAL: Rs. ${getTotalPrice().toLocaleString()}*
+
+Please confirm my order.
+
+Thank you! ❤️
+`;
+
+  const whatsappUrl =
+    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappUrl, "_blank");
+};
 
   /* ================= EMPTY CART ================= */
 
@@ -319,7 +338,6 @@ export default function CartPageContent() {
 
                 Order via WhatsApp
               </button>
-
 
               <Link
                 href="/cakes"
