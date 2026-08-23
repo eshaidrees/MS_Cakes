@@ -4,7 +4,7 @@ import CartPageContent from "@/components/CartPageContent";
 export default function CartPage() {
   return (
     <div className="min-h-screen">
-      <main className="pt-20">
+      <main>
         <CartPageContent />
       </main>
       <WhatsAppButton />

@@ -11,7 +11,9 @@ interface CakeCardProps {
 export default function CakeCard({
   cake,
 }: CakeCardProps) {
-  const startingPrice = cake.variants[0]?.price ?? 0;
+  const isCustomCake = cake.category === "customize";
+
+  const startingPrice = cake.variants[0]?.price;
 
   return (
     <Link
@@ -30,9 +32,11 @@ export default function CakeCard({
 
         {/* Type Badge */}
         <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold capitalize text-[#6b4636] shadow-sm">
-          {cake.type === "dessert-cup"
-            ? "Dessert Cup"
-            : cake.type}
+          {isCustomCake
+            ? "Custom Cake"
+            : cake.type === "dessert-cup"
+              ? "Dessert Cup"
+              : cake.type}
         </span>
       </div>
 
@@ -48,16 +52,32 @@ export default function CakeCard({
 
         <div className="flex items-center justify-between gap-3">
           <div>
-            <p className="text-xs text-text-light">
-              Starting from
-            </p>
+            {isCustomCake ? (
+              <>
+                <p className="text-xs text-text-light">
+                  Price
+                </p>
 
-            <p className="font-heading text-base font-bold text-accent-brown sm:text-xl">
-              Rs. {startingPrice.toLocaleString()}
-            </p>
+                <p className="font-heading text-base font-bold text-accent-brown sm:text-xl">
+                  Custom Pricing
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="text-xs text-text-light">
+                  Starting from
+                </p>
+
+                <p className="font-heading text-base font-bold text-yellow-800 sm:text-xl">
+                  {startingPrice !== undefined
+                    ? `Rs. ${startingPrice.toLocaleString()}`
+                    : "Price on request"}
+                </p>
+              </>
+            )}
           </div>
 
-          <span className="rounded-full bg-pink-primary px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-accent-brown">
+          <span className="rounded-full bg-yellow-800  px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-yellow-900">
             View
           </span>
         </div>

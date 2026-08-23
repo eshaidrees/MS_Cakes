@@ -20,6 +20,8 @@ export interface Product {
 ========================================================= */
 
 export const cakes: Product[] = [
+
+  // birthday
   {
     id: "chocolate-cake",
     name: "Chocolate Bliss Cake",
@@ -219,6 +221,8 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 3900 },
     ],
   },
+
+  // Wedding
   {
     id: "pink-vanila-heart",
     name: "Pink Rose Heart Vanilla Cake ",
@@ -270,6 +274,8 @@ export const cakes: Product[] = [
       { label: "5 Pounds", price: 5900 },     
     ],
   },
+
+  // Independence
   {
     id: "flag-cake",
     name: "Pakistan Flag Azadi Cake",
@@ -323,6 +329,40 @@ export const cakes: Product[] = [
       { label: "3 Pound", price: 3000 },     
     ],
   },
+
+   // Customise
+{
+  id: "jungle-safari-cake",
+  name: "🦁 Jungle Safari Adventure Cake",
+  image: "/images/custo1.jpeg",
+  description:
+    "A fun and colorful jungle-themed cake featuring adorable cartoon animals, lush greenery, and playful details. Perfect for little explorers and unforgettable birthday celebrations.",
+  type: "cake",
+  category: "customize",
+  variants: [],
+},
+
+{
+  id: "fairy-birthday-cake",
+  name: "🧚‍♀️ Enchanted Fairy Garden Cake",
+  image: "/images/custo2.jpeg",
+  description:
+    "A dreamy two-tier cake decorated with a sweet fairy, delicate butterflies, pink accents, and golden details. A magical choice for a beautiful little girl’s birthday.",
+  type: "cake",
+  category: "customize",
+  variants: [],
+},
+
+{
+  id: "romantic-memories-cake",
+  name: "❤️ Romantic Memories Birthday Cake",
+  image: "/images/custo3.jpeg",
+  description:
+    "A personalized celebration cake decorated with romantic cartoon memories, beautiful roses, and heartfelt messages. Perfect for celebrating someone special and creating a memorable birthday.",
+  type: "cake",
+  category: "customize",
+  variants: [],
+},
 ];
 
 /* =========================================================

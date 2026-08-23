@@ -26,6 +26,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/cakes", label: "Our Cakes" },
+    { href: "/about" , label: "About Us"},
     { href: "/contact", label: "Contact" },
   ];
 
@@ -50,11 +51,11 @@ export default function Navbar() {
                 alt="MS Cakes Logo"
                 width={100}
                 height={100}
-                className="h-8 w-8 shrink-0 object-contain md:h-10 md:w-10"
+                className="h-15 w-20 shrink-0 object-contain rounded-full md:h-20 md:w-20"
               />
 
-              <span className="font-heading text-xl font-bold text-foreground md:text-2xl">
-                MS Cakes
+              <span className="font-script text-1xl text-[#6B4035] md:text-4xl">
+                MS Cakes & Bakes
               </span>
             </Link>
 
@@ -442,7 +443,7 @@ function CartDrawer() {
             <button
               type="button"
               onClick={handleWhatsAppOrder}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 py-3.5 font-semibold text-white transition-all duration-200 hover:bg-green-700"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 py-3.5 font-semibold text-white transition-all duration-200 hover:bg-green-600"
             >
               <svg
                 className="h-5 w-5"
@@ -455,14 +456,6 @@ function CartDrawer() {
               Order via WhatsApp
             </button>
 
-            {/* Checkout */}
-            <Link
-              href="/checkout"
-              onClick={() => setIsCartOpen(false)}
-              className="block w-full rounded-xl bg-pink-500 py-3.5 text-center font-semibold text-white transition-all duration-200 hover:bg-pink-600"
-            >
-              🛒 Proceed to Checkout
-            </Link>
 
             {/* Continue Shopping */}
             <Link
