@@ -15,7 +15,7 @@ export default function AboutSection() {
 
             <div className="relative h-[420px] overflow-hidden rounded-3xl bg-[#f8eee9] shadow-lg md:h-[520px]">
               <Image
-                src="/images/cake1.jpeg"
+                src="/images/cake3.jpeg"
                 alt="Freshly made MS Cakes in Karachi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

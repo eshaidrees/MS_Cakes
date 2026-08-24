@@ -47,7 +47,7 @@ export default function ProductDetail({
     addToCart({
       productId: product.id,
       name: product.name,
-      image: product.image,
+      image: product.image, 
       description: product.description,
       type: product.type,
       variant: selectedVariant.label,

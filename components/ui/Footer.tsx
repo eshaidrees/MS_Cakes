@@ -16,11 +16,12 @@ export default function Footer() {
                 alt="MS Cakes Logo"
                 width={50}
                 height={50}
-                className="h-15 w-20 shrink-0 object-contain rounded-full md:h-20 md:w-20"              />
-
-              <h3 className="text-xl md:text-2xl font-bold text-foreground font-heading">
-                MS Cakes
-              </h3>
+                className="h-16 w-16 shrink-0 object-cover rounded-full md:h-20 md:w-20"              />
+              <span className="-mt-1 font-italic font-heading text-[19px] text-[#6B4035] sm:text-[23px] md:text-[27px]">
+                MS Cakes{" "}
+                <span className="font-serif text-[0.9em] not-italic">&amp;</span>{" "}
+                Bakes
+              </span>
             </div>
 
             <p className="text-text-light mb-5 max-w-md leading-relaxed">

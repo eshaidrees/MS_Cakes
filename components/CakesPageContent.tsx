@@ -5,6 +5,8 @@ import {
   cakes,
   cupcakes,
   dessertCup,
+  pastries,
+  cartoonThemeCake,
 } from "@/data/cakes";
 
 const birthdayCakes = cakes.filter(
@@ -76,7 +78,14 @@ export default function CakesPageContent() {
       🎂 Birthday
     </a>
 
+    <a
+      href="#cartoon-theme-cakes"
+      className="shrink-0 rounded-full border border-[#efd0d5] bg-white px-4 py-2.5 text-sm font-medium text-[#65443a] shadow-sm transition-all hover:border-[#e9a6b0] hover:bg-[#fce5e8] hover:text-[#65443a] sm:px-5"
+    >
+      🍰 Cartoon Theme Cake
+    </a>
 
+     
     {/* Wedding */}
 
     <a
@@ -116,6 +125,14 @@ export default function CakesPageContent() {
       🧁 Cupcakes
     </a>
 
+    {/* Pastry */}
+   <a
+      href="#pastries"
+      className="shrink-0 rounded-full border border-[#efd0d5] bg-white px-4 py-2.5 text-sm font-medium text-[#65443a] shadow-sm transition-all hover:border-[#e9a6b0] hover:bg-[#fce5e8] hover:text-[#65443a] sm:px-5"
+    >
+       🍰Pastries
+    </a>
+
 
     {/* Dessert */}
 
@@ -125,6 +142,7 @@ export default function CakesPageContent() {
     >
       🍨 Dessert Cups
     </a>
+
 
   </div>
 
@@ -140,6 +158,19 @@ export default function CakesPageContent() {
             title="🎂 Birthday Cakes"
             description="Beautiful birthday cakes for every celebration."
             products={birthdayCakes}
+          />
+        </section>
+
+        {/* ================= CARTOONS THEME BIRTHDAY CAKES ================= */}
+
+        <section
+          id="cartoon-theme-cakes"
+          className="scroll-mt-28 text-center"
+        >
+          <ProductSection
+            title="🎂 Cartoons Theme Birthday Cakes"
+            description="Beautiful cartoons theme birthday cakes for every celebration."
+            products={cartoonThemeCake}
           />
         </section>
 
@@ -182,7 +213,7 @@ export default function CakesPageContent() {
           />
         </section>
 
-        {/* ================= CUPCAKES ================= */}
+        {/* ================= PASTRIES ================= */}
 
         <section
           id="cupcakes"
@@ -192,6 +223,17 @@ export default function CakesPageContent() {
             title="🧁 Cupcakes"
             description="Perfect little treats for every occasion."
             products={cupcakes}
+          />
+        </section>
+
+         <section
+          id="pastries"
+          className="scroll-mt-28 text-center"
+        >
+          <ProductSection
+            title="🍰 Pastries"
+            description="Perfect little treats for every occasion."
+            products={pastries}
           />
         </section>
 

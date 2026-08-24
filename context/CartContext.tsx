@@ -1,5 +1,6 @@
 "use client";
 
+import { ProductType } from "@/data/cakes";
 import React, {
   createContext,
   useContext,
@@ -14,7 +15,7 @@ export interface CartItem {
   name: string;
   image: string;
   description: string;
-  type: "cake" | "cupcake" | "dessert-cup";
+  type: ProductType;
   variant: string;
   price: number;
   quantity: number;
@@ -25,7 +26,7 @@ interface AddToCartItem {
   name: string;
   image: string;
   description: string;
-  type: "cake" | "cupcake" | "dessert-cup";
+  type: ProductType;
   variant: string;
   price: number;
 }

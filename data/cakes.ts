@@ -3,7 +3,7 @@ export interface ProductVariant {
   price: number;
 }
 
-export type ProductType = "cake" | "cupcake" | "dessert-cup";
+export type ProductType = "cake" | "cupcake" | "dessert-cup" | "pastries";
 
 export interface Product {
   id: string;
@@ -365,6 +365,100 @@ export const cakes: Product[] = [
 },
 ];
 
+
+  // Cartoons Theme
+export const cartoonThemeCake: Product[] = [
+ {
+    id: "barbie-cartoon-cake",
+    name: "Barbie Dream Birthday Cake",
+    image: "/images/cart1.png",
+    description:
+      "A gorgeous Barbie-themed celebration cake decorated in beautiful shades of pink with Barbie details, sparkling stars, butterflies, golden accents, and a glamorous Barbie topper. Perfect for a magical birthday celebration.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2500 },
+      { label: "3 Pounds", price: 3500 },
+      { label: "4 Pounds", price: 4500 },
+    ],
+  },
+
+  {
+    id: "tom-and-jerry-cake",
+    name: "Tom & Jerry Cartoon Cake",
+    image: "/images/cart2.png",
+    description:
+      "A fun Tom & Jerry themed birthday cake featuring playful cartoon character decorations, a smooth white cream finish, and charming black details. A perfect choice for fans of the classic cartoon duo.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2400 },
+      { label: "3 Pounds", price: 3400 },
+      { label: "4 Pounds", price: 4400 },
+    ],
+  },
+
+  {
+    id: "princess-cartoon-cake",
+    name: "Princess Castle Birthday Cake",
+    image: "/images/cart3.png",
+    description:
+      "A beautiful princess-themed birthday cake decorated with a magical castle, elegant red roses, butterflies, balloons, and a charming princess design. Perfect for a fairytale-inspired celebration.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2600 },
+      { label: "3 Pounds", price: 3700 },
+      { label: "4 Pounds", price: 4800 },
+    ],
+  },
+
+  {
+    id: "doraemon-cartoon-cake",
+    name: "Doraemon Adventure Cake",
+    image: "/images/cart4.png",
+    description:
+      "A bright and colorful Doraemon birthday cake featuring Doraemon and friends, playful cartoon toppers, and vibrant blue cream decoration. A fun and exciting choice for every Doraemon fan.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2400 },
+      { label: "3 Pounds", price: 3400 },
+      { label: "4 Pounds", price: 4400 },
+    ],
+  },
+
+  {
+    id: "fairy-butterfly-cartoon-cake",
+    name: "Enchanted Fairy Butterfly Cake",
+    image: "/images/cart5.png",
+    description:
+      "A dreamy fairy-themed birthday cake decorated with beautiful purple butterflies, magical mushrooms, a sweet fairy character, and elegant lavender details. A perfect choice for a magical celebration.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2700 },
+      { label: "3 Pounds", price: 3800 },
+      { label: "4 Pounds", price: 4900 },
+    ],
+  },
+
+  {
+    id: "masha-and-bear-cake",
+    name: "Masha & Bear Birthday Cake",
+    image: "/images/cart6.png",
+    description:
+      "A playful Masha & the Bear themed birthday cake featuring colorful character decorations, a large Masha design, butterflies, flowers, a cute number topper, and a cheerful pink finish.",
+    type: "cake",
+    category: "cartoontheme",
+    variants: [
+      { label: "2 Pounds", price: 2400 },
+      { label: "3 Pounds", price: 3400 },
+      { label: "4 Pounds", price: 4400 },
+    ],
+  },
+]
+
 /* =========================================================
    CUPCAKES
 ========================================================= */
@@ -454,6 +548,81 @@ export const cupcakes: Product[] = [
 ];
 
 /* =========================================================
+   Pastry
+========================================================= */
+export const pastries: Product[] = [
+ {
+    id: "red-velve-cream-pastry",
+    name: "Red Velvet Cream Pastry",
+    image: "/images/past1.png",
+    description:
+      "A soft and delicate pastry made with light vanilla sponge, creamy filling, and sweet strawberry. Beautifully finished with fluffy cream and a fresh cherry for an elegant and delicious treat.",
+    type: "pastries",
+    category: "pastries",
+    variants: [
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
+    ],
+  },
+
+  {
+    id: "red-velvet-pastry",
+    name: "Red Velvet Pastry",
+    image: "/images/past2.jpg",
+    description:
+      "A rich and moist red velvet pastry layered with smooth cream and finished with elegant white frosting. A classic favorite for birthdays, celebrations, and everyday sweet cravings.",
+    type: "pastries",
+    category: "pastries",
+    variants: [
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
+    ],
+  },
+
+  {
+    id: "vanilla-pineapple-pastry",
+    name: "Vanilla Pineapple Pastry",
+    image: "/images/past3.jpg",
+    description:
+      "A soft vanilla pastry layered with creamy frosting and sweet pineapple filling, topped with smooth cream and a bright cherry. Light, refreshing, and perfect for any occasion.",
+    type: "pastries",
+    category: "pastries",
+    variants: [
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
+    ],
+  },
+
+  {
+    id: "chocolate-pastry",
+    name: "Chocolate Cream Pastry",
+    image: "/images/past4.jpg",
+    description:
+      "A delicious chocolate pastry made with soft chocolate sponge, rich chocolate cream, and smooth chocolate layers. Finished with chocolate decoration for an indulgent and satisfying dessert.",
+    type: "pastries",
+    category: "pastries",
+    variants: [
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
+    ],
+  },
+
+  {
+    id: "premium-chocolate-pastry",
+    name: "Premium Chocolate Pastry",
+    image: "/images/past5.jpg",
+    description:
+      "A luxurious chocolate pastry featuring rich chocolate sponge, creamy chocolate filling, and a smooth chocolate finish. Perfect for chocolate lovers and special occasions.",
+    type: "pastries",
+    category: "pastries",
+    variants: [
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
+    ],
+  },
+]
+
+/* =========================================================
    Dessert Cup
 ========================================================= */
 
@@ -510,4 +679,6 @@ export const allProducts: Product[] = [
   ...cakes,
   ...cupcakes,
   ...dessertCup,
+  ...pastries,
+  ...cartoonThemeCake,  
 ];

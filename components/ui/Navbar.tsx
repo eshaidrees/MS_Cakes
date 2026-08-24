@@ -26,7 +26,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/cakes", label: "Our Cakes" },
-    { href: "/about" , label: "About Us"},
+    { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -35,11 +35,10 @@ export default function Navbar() {
       {/* ================= NAVBAR ================= */}
 
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled
+        className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-md"
             : "bg-white"
-        }`}
+          }`}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="flex h-18 items-center justify-between md:h-20">
@@ -51,11 +50,13 @@ export default function Navbar() {
                 alt="MS Cakes Logo"
                 width={100}
                 height={100}
-                className="h-15 w-20 shrink-0 object-contain rounded-full md:h-20 md:w-20"
+                className="h-16 w-16 shrink-0 object-cover rounded-full md:h-20 md:w-20"
               />
 
-              <span className="font-script text-1xl text-[#6B4035] md:text-4xl">
-                MS Cakes & Bakes
+              <span className="-mt-1 font-italic font-heading text-[19px] text-[#6B4035] sm:text-[23px] md:text-[27px]">
+                MS Cakes{" "}
+                <span className="font-serif text-[0.9em] not-italic">&amp;</span>{" "}
+                Bakes
               </span>
             </Link>
 
