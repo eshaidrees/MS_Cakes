@@ -2,11 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import {
-  FiChevronLeft,
-  FiChevronRight,
-} from "react-icons/fi";
+import { useEffect, useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const slides = [
   {
@@ -35,197 +32,91 @@ const slides = [
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
 
-  const previousSlide = () => {
-    setCurrent((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
   };
 
-  const nextSlide = () => {
-    setCurrent((prev) =>
-      prev === slides.length - 1 ? 0 : prev + 1
-    );
+  const previousSlide = () => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
   };
+
+  // Auto slide every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative w-full overflow-hidden bg-[#faf7f2]">
-      {/* ================= SLIDER ================= */}
-
-      <div className="relative w-full">
+      {/* Slider */}
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
         {slides.map((slide, index) => (
-          <div
+          <Link
             key={slide.id}
-            className={`
-              relative w-full
-              ${index === current ? "block" : "hidden"}
-            `}
+            href={slide.href}
+            className="relative min-w-full"
           >
-            {/* ================= CLICKABLE HERO ================= */}
+            <div className="relative aspect-[3/5] w-full sm:aspect-[16/9]">
+              {/* Mobile */}
+              <Image
+                src={slide.mobileImage}
+                alt={slide.alt}
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover sm:hidden"
+              />
 
-            <Link
-              href={slide.href}
-              className="block w-full cursor-pointer"
-            >
-              <div
-                className="
-                  relative
-                  w-full
-                  aspect-[3/5]
-                  sm:aspect-[16/9]
-                "
-              >
-                {/* ================= MOBILE IMAGE ================= */}
-
-                <Image
-                  src={slide.mobileImage}
-                  alt={slide.alt}
-                  fill
-                  priority={index === 0}
-                  sizes="(max-width: 639px) 100vw, 0px"
-                  className="
-                    object-cover
-                    sm:hidden
-                  "
-                />
-
-                {/* ================= DESKTOP IMAGE ================= */}
-
-                <Image
-                  src={slide.image}
-                  alt={slide.alt}
-                  fill
-                  priority={index === 0}
-                  sizes="(min-width: 640px) 100vw, 0px"
-                  className="
-                    hidden
-                    object-cover
-                    sm:block
-                  "
-                />
-              </div>
-            </Link>
-          </div>
+              {/* Desktop */}
+              <Image
+                src={slide.image}
+                alt={slide.alt}
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="hidden object-cover sm:block"
+              />
+            </div>
+          </Link>
         ))}
       </div>
 
-      {/* ================= PREVIOUS BUTTON ================= */}
-
+      {/* Previous */}
       <button
-        type="button"
         onClick={previousSlide}
         aria-label="Previous slide"
-        className="
-          absolute
-          left-3
-          top-1/2
-          z-10
-          flex
-          h-9
-          w-9
-          -translate-y-1/2
-          items-center
-          justify-center
-          rounded-full
-          bg-white/80
-          text-gray-800
-          shadow-lg
-          backdrop-blur-sm
-          transition
-          hover:bg-white
-          hover:scale-105
-          active:scale-95
-          sm:left-4
-          sm:h-12
-          sm:w-12
-        "
+        className="absolute left-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-800 shadow-md backdrop-blur-sm transition hover:scale-105 hover:bg-white active:scale-95 sm:left-4 sm:h-12 sm:w-12"
       >
-        <FiChevronLeft
-          size={22}
-          className="sm:h-7 sm:w-7"
-        />
+        <FiChevronLeft size={22} />
       </button>
 
-      {/* ================= NEXT BUTTON ================= */}
-
+      {/* Next */}
       <button
-        type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="
-          absolute
-          right-3
-          top-1/2
-          z-10
-          flex
-          h-9
-          w-9
-          -translate-y-1/2
-          items-center
-          justify-center
-          rounded-full
-          bg-white/80
-          text-gray-800
-          shadow-lg
-          backdrop-blur-sm
-          transition
-          hover:bg-white
-          hover:scale-105
-          active:scale-95
-          sm:right-4
-          sm:h-12
-          sm:w-12
-        "
+        className="absolute right-3 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-gray-800 shadow-md backdrop-blur-sm transition hover:scale-105 hover:bg-white active:scale-95 sm:right-4 sm:h-12 sm:w-12"
       >
-        <FiChevronRight
-          size={22}
-          className="sm:h-7 sm:w-7"
-        />
+        <FiChevronRight size={22} />
       </button>
 
-      {/* ================= DOTS ================= */}
-
-      <div
-        className="
-          absolute
-          bottom-4
-          left-1/2
-          z-10
-          flex
-          -translate-x-1/2
-          items-center
-          gap-2
-          sm:bottom-5
-        "
-      >
+      {/* Dots */}
+      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
-            type="button"
             onClick={() => setCurrent(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className="
-              flex
-              h-5
-              items-center
-            "
-          >
-            <span
-              className={`
-                block
-                h-2
-                rounded-full
-                transition-all
-                duration-300
-                ${
-                  current === index
-                    ? "w-8 bg-white"
-                    : "w-2 bg-white/60 hover:bg-white/80"
-                }
-              `}
-            />
-          </button>
+            className={`h-2 rounded-full transition-all duration-300 ${
+              current === index
+                ? "w-8 bg-white"
+                : "w-2 bg-white/60"
+            }`}
+          />
         ))}
       </div>
     </section>
   );
-}
+    }
