@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "MS Cakes And Bakes - Handcrafted with Love",
   description: "Delicious homemade cakes for all your special occasions. Birthday, wedding, custom cakes and more!",
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo.jpeg",
   },
 };
 

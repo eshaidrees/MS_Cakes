@@ -22,12 +22,12 @@ export interface Product {
 export const cakes: Product[] = [
 
   // birthday
-  {
-    id: "chocolate-cake",
-    name: "Chocolate Bliss Cake",
-    image: "/images/cake1.jpeg",
+    {
+    id: "pineapple-cherry-cake",
+    name: "🍍 Pineapple Cream Cake",
+    image: "/images/cake24.png",
     description:
-      "A rich chocolate sponge layered with smooth chocolate cream, finished with elegant frosting swirls, chocolate flakes, and golden sugar pearls. Perfect for birthdays and special celebrations.",
+      "A light and refreshing vanilla pineapple cake beautifully finished with smooth whipped cream, juicy pineapple pieces, and glossy red cherries. A classic fruity favorite with a soft, creamy and delicious taste.",
     type: "cake",
     category: "birthday",
     variants: [
@@ -36,7 +36,19 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 3000 },
     ],
   },
-
+  {
+    id: "pink-rose-vanila",
+    name: "Elegant Pink Rose Vanilla Cake ",
+    image: "/images/cake16.jpeg",
+    description:
+      "A delicious vanilla sponge finished with creamy vanilla frosting, soft pink buttercream roses, and delicate pearl accents. Its elegant design makes it perfect for birthdays, celebrations, and memorable occasions.",
+    type: "cake",
+    category: "birthday",
+    variants: [
+      { label: "2 Pounds", price: 1600 },
+      { label: "3 Pounds", price: 3200 },
+    ],
+  },
   {
     id: "vanilla-ribbon-cake",
     name: "Vanilla Ribbon Cake",
@@ -66,7 +78,20 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 3600 },
     ],
   },
-
+{
+    id: "chocolate-cake",
+    name: "Chocolate Bliss Cake",
+    image: "/images/cake1.jpeg",
+    description:
+      "A rich chocolate sponge layered with smooth chocolate cream, finished with elegant frosting swirls, chocolate flakes, and golden sugar pearls. Perfect for birthdays and special celebrations.",
+    type: "cake",
+    category: "birthday",
+    variants: [
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 2000 },
+      { label: "3 Pounds", price: 3000 },
+    ],
+  },
   {
     id: "purple-forest",
     name: "Purple Blossom Vanilla Cake",
@@ -237,17 +262,30 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 3000 },
     ],
   },
-  {
-    id: "pink-rose-vanila",
-    name: "Elegant Pink Rose Vanilla Cake ",
-    image: "/images/cake16.jpeg",
-    description:
-      "A delicious vanilla sponge finished with creamy vanilla frosting, soft pink buttercream roses, and delicate pearl accents. Its elegant design makes it perfect for birthdays, celebrations, and memorable occasions.",
+   {
+    id: "couple-anni-cake",
+    name: "❤️ Elegant Anniversary Rose Cake",
+    image: "/images/cake23.png",
+    description:"A romantic white anniversary red velvet cake decorated with beautiful red roses, delicate white flowers, golden accents, and a charming couple silhouette. Finished with a “Together Forever” design, making it perfect for celebrating love and special milestones.",
     type: "cake",
     category: "wedding",
     variants: [
-      { label: "2 Pounds", price: 1600 },
-      { label: "3 Pounds", price: 3200 },
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 2000 },
+      { label: "3 Pounds", price: 3000 },
+    ],
+  },
+  {
+    id: "first-anni-cake",
+    name: "❤️ Red Velvet Anniversary Cake",
+    image: "/images/cake25.png",
+    description:"A romantic white anniversary red velvet cake decorated with beautiful red roses, delicate white flowers, golden accents, and a charming couple silhouette. Finished with a “Together Forever” design, making it perfect for celebrating love and special milestones.",
+    type: "cake",
+    category: "wedding",
+    variants: [
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 2000 },
+      { label: "3 Pounds", price: 3000 },
     ],
   },
   {
@@ -332,28 +370,6 @@ export const cakes: Product[] = [
 
    // Customise
 {
-  id: "jungle-safari-cake",
-  name: "🦁 Jungle Safari Adventure Cake",
-  image: "/images/custo1.jpeg",
-  description:
-    "A fun and colorful jungle-themed cake featuring adorable cartoon animals, lush greenery, and playful details. Perfect for little explorers and unforgettable birthday celebrations.",
-  type: "cake",
-  category: "customize",
-  variants: [],
-},
-
-{
-  id: "fairy-birthday-cake",
-  name: "🧚‍♀️ Enchanted Fairy Garden Cake",
-  image: "/images/custo2.jpeg",
-  description:
-    "A dreamy two-tier cake decorated with a sweet fairy, delicate butterflies, pink accents, and golden details. A magical choice for a beautiful little girl’s birthday.",
-  type: "cake",
-  category: "customize",
-  variants: [],
-},
-
-{
   id: "romantic-memories-cake",
   name: "❤️ Romantic Memories Birthday Cake",
   image: "/images/custo3.jpeg",
@@ -382,10 +398,9 @@ export const cartoonThemeCake: Product[] = [
       { label: "4 Pounds", price: 4500 },
     ],
   },
-
   {
     id: "tom-and-jerry-cake",
-    name: "Tom & Jerry Cartoon Cake",
+    name: "Tom And Jerry Cartoon Cake",
     image: "/images/cart2.png",
     description:
       "A fun Tom & Jerry themed birthday cake featuring playful cartoon character decorations, a smooth white cream finish, and charming black details. A perfect choice for fans of the classic cartoon duo.",
@@ -397,6 +412,31 @@ export const cartoonThemeCake: Product[] = [
       { label: "4 Pounds", price: 4400 },
     ],
   },
+  {
+  id: "jungle-safari-cake",
+  name: "🦁 Jungle Safari Adventure Cake",
+  image: "/images/cart7.jpeg",
+  description:
+    "A fun and colorful two-tier jungle-themed cake decorated with adorable safari animals, lush green grass, tropical leaves, and charming jungle details. Perfect for a little adventurer's birthday celebration.",
+  type: "cake",
+  category: "cartoontheme",
+  variants: [
+      { label: "2 Tier", price: 4500 },
+  ],
+},
+
+{
+  id: "fairy-birthday-cake",
+  name: "🧚‍♀️ Pink Fairy Butterfly Cake",
+  image: "/images/cart8.jpeg",
+  description:
+    "A dreamy two-tier cake decorated with a sweet fairy, delicate butterflies, pink accents, and golden details. A magical choice for a beautiful little girl's birthday.",
+  type: "cake",
+  category: "cartoontheme",
+  variants: [
+      { label: "2 Tier", price: 4500 },
+  ],
+},
 
   {
     id: "princess-cartoon-cake",
@@ -445,7 +485,7 @@ export const cartoonThemeCake: Product[] = [
 
   {
     id: "masha-and-bear-cake",
-    name: "Masha & Bear Birthday Cake",
+    name: "Masha And Bear Birthday Cake",
     image: "/images/cart6.png",
     description:
       "A playful Masha & the Bear themed birthday cake featuring colorful character decorations, a large Masha design, butterflies, flowers, a cute number topper, and a cheerful pink finish.",
@@ -532,19 +572,6 @@ export const cupcakes: Product[] = [
       { label: "12 Cupcakes", price: 1600 },
     ],
   },
-  {
-    id: "cake-slice",
-    name: "Chocolate Cake Slice ",
-    image: "/images/brownies1.jpeg",
-    description:
-      "A rich and moist chocolate cake slice layered with silky chocolate frosting and finished with a smooth chocolate ganache. Individually packed for freshness, making it the perfect dessert for chocolate lovers on the go.",
-    type: "cupcake",
-    category: "cupcake",
-    variants: [
-      { label: "6 Brownies", price: 900 },
-      { label: "12 Brownies", price: 1800 },
-    ],
-  },
 ];
 
 /* =========================================================
@@ -620,6 +647,45 @@ export const pastries: Product[] = [
         { label: "12 Pastry", price: 1800 },
     ],
   },
+  {
+    id: "brownies",
+    name: "🍫 Classic Chocolate Brownies ",
+    image: "/images/brownie1.jpg",
+    description:
+      "Rich, moist chocolate brownies with a soft, fudgy texture and a smooth chocolate glaze on top. Perfectly chocolatey and delicious for satisfying any sweet craving.",
+    type: "cake",
+    category: "brownies",
+    variants: [
+      { label: "6 Brownies", price: 1200 },
+      { label: "12 Brownies", price: 2400 },
+    ],
+  },
+   {
+    id: "cake-slice",
+    name: "Chocolate Cake Slice ",
+    image: "/images/cake-slice.jpeg",
+    description:
+      "A rich and moist chocolate cake slice layered with silky chocolate frosting and finished with a smooth chocolate ganache. Individually packed for freshness, making it the perfect dessert for chocolate lovers on the go.",
+    type: "cake",
+    category: "cake-slice",
+    variants: [
+      { label: "6 Slice", price: 1200 },
+      { label: "12 Slice", price: 2400 },
+    ],
+  },
+{
+  id: "tea-cake",
+  name: "Tea Cakes",
+  image: "/images/teacake.jpeg",
+  description:
+    "Soft and freshly baked tea cakes, perfect with a cup of tea. Choose from our classic Simple Tea Cake or our delicious Nuts Tea Cake topped with crunchy nuts.",
+  type: "cake",
+  category: "tea-cake",
+  variants: [
+    { label: "Simple Tea Cake", price: 500 },
+    { label: "Nuts Tea Cake", price: 650 },
+  ],
+},
 ]
 
 /* =========================================================

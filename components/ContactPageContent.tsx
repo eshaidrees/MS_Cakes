@@ -171,24 +171,14 @@ export default function ContactPageContent() {
                 Contact Information
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <span className="text-3xl">📍</span>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">
-                      Our Location
-                    </h3>
-                    <p className="text-text-light">
-                      123 Bakery Street, Sweet Town, CA 90210
-                    </p>
-                  </div>
-                </div>
+  
                 <div className="flex items-start gap-4">
                   <span className="text-3xl">📞</span>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">
                       Phone Number
                     </h3>
-                    <p className="text-text-light">+1 234 567 890</p>
+                    <p className="text-text-light">03198531082</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -198,7 +188,18 @@ export default function ContactPageContent() {
                       Email
                     </h3>
                     <p className="text-text-light">
-                      hello@sweetdelight.com
+                      eshaidrees190@gmail.com
+                    </p>
+                  </div>
+                </div>
+                {/* <div className="flex items-start gap-4">
+                  <span className="text-3xl">📍</span>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Our Location
+                    </h3>
+                    <p className="text-text-light">
+                      123 Bakery Street, Sweet Town, 
                     </p>
                   </div>
                 </div>
@@ -215,7 +216,7 @@ export default function ContactPageContent() {
                       Sunday: 10:00 AM - 5:00 PM
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

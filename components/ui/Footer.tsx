@@ -142,7 +142,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">
-              Visit & Contact
+             Contact
             </h4>
 
             <ul className="space-y-3 text-text-light">
@@ -154,20 +154,20 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Phone size={18} className="flex-shrink-0" />
                 <a
-                  href="tel:+923001234567"
+                  href="tel:+03073588816"
                   className="hover:text-accent-brown transition-colors"
                 >
-                  +92 300 1234567
+                  +92 3073 588816
                 </a>
               </li>
 
               <li className="flex items-center gap-2">
                 <Mail size={18} className="flex-shrink-0" />
                 <a
-                  href="mailto:hello@mscakesandbakes.com"
+                  href="mailto:mscakesandbakes@gmail.com"
                   className="hover:text-accent-brown transition-colors"
                 >
-                  hello@mscakesandbakes.com
+                  mscakesandbakes@gmail.com
                 </a>
               </li>
 

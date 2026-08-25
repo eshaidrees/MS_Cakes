@@ -213,7 +213,7 @@ export default function CakesPageContent() {
           />
         </section>
 
-        {/* ================= PASTRIES ================= */}
+        {/* ================= CUPCAKES ================= */}
 
         <section
           id="cupcakes"
@@ -225,14 +225,15 @@ export default function CakesPageContent() {
             products={cupcakes}
           />
         </section>
+        {/* ================= PASTRIES ================= */}
 
          <section
           id="pastries"
           className="scroll-mt-28 text-center"
         >
           <ProductSection
-            title="🍰 Pastries"
-            description="Perfect little treats for every occasion."
+            title="🍰 Sweet Treats"
+            description="Discover our delicious selection of freshly baked sweet treats, from creamy pastries and indulgent brownies to soft tea cakes and delightful cake slices."
             products={pastries}
           />
         </section>
