@@ -270,9 +270,9 @@ export const cakes: Product[] = [
     type: "cake",
     category: "wedding",
     variants: [
-      { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2400 },
+      { label: "3 Pounds", price: 3600 },
     ],
   },
   {
@@ -283,9 +283,9 @@ export const cakes: Product[] = [
     type: "cake",
     category: "wedding",
     variants: [
-      { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2400 },
+      { label: "3 Pounds", price: 3600 },
     ],
   },
   {
@@ -424,6 +424,20 @@ export const cartoonThemeCake: Product[] = [
       { label: "2 Tier", price: 4500 },
   ],
 },
+{
+  id: "racing-car-birthday-cake",
+  name: "Racing Car Birthday Cake",
+  image: "/images/cart9.png",
+  description:
+    "A fun racing car themed birthday cake decorated with a red sports car, checkered racing flags, speedometer, trophy, traffic lights, racing cones, stars, and colorful red and blue cream borders. Perfect for boys who love cars and racing.",
+  type: "cake",
+  category: "cartoontheme",
+  variants: [
+    { label: "2 Pounds", price: 3000 },
+    { label: "3 Pounds", price: 4200 },
+    { label: "4 Pounds", price: 5400 },
+  ],
+},
 
 {
   id: "fairy-birthday-cake",
@@ -497,6 +511,7 @@ export const cartoonThemeCake: Product[] = [
       { label: "4 Pounds", price: 4400 },
     ],
   },
+  
 ]
 
 /* =========================================================
@@ -587,8 +602,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 900 },
-        { label: "12 Pastry", price: 1800 },
+        { label: "6 Pastry", price: 1200 },
+        { label: "12 Pastry", price: 2400 },
     ],
   },
 
@@ -601,8 +616,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 900 },
-        { label: "12 Pastry", price: 1800 },
+        { label: "6 Pastry", price: 1200 },
+        { label: "12 Pastry", price: 2400 },
     ],
   },
 
@@ -629,8 +644,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 900 },
-        { label: "12 Pastry", price: 1800 },
+        { label: "6 Pastry", price: 1200 },
+        { label: "12 Pastry", price: 2400 },
     ],
   },
 
@@ -643,8 +658,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 900 },
-        { label: "12 Pastry", price: 1800 },
+        { label: "6 Pastry", price: 1200 },
+        { label: "12 Pastry", price: 2400 },
     ],
   },
   {

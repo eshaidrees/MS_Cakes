@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import CakesPageContent from "@/components/CakesPageContent";
+import ContactPageContent from "@/components/ContactPageContent";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <CakesPageContent />
         <AboutSection />
         <CTASection />
+        <ContactPageContent/>
       </main>
       <WhatsAppButton />
     </div>
