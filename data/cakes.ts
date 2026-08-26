@@ -37,19 +37,6 @@ export const cakes: Product[] = [
     ],
   },
   {
-    id: "pink-rose-vanila",
-    name: "Elegant Pink Rose Vanilla Cake ",
-    image: "/images/cake16.jpeg",
-    description:
-      "A delicious vanilla sponge finished with creamy vanilla frosting, soft pink buttercream roses, and delicate pearl accents. Its elegant design makes it perfect for birthdays, celebrations, and memorable occasions.",
-    type: "cake",
-    category: "birthday",
-    variants: [
-      { label: "2 Pounds", price: 1600 },
-      { label: "3 Pounds", price: 3200 },
-    ],
-  },
-  {
     id: "vanilla-ribbon-cake",
     name: "Vanilla Ribbon Cake",
     image: "/images/cake2.jpeg",
@@ -76,6 +63,19 @@ export const cakes: Product[] = [
       { label: "1 Pound", price: 1200 },
       { label: "2 Pounds", price: 2400 },
       { label: "3 Pounds", price: 3600 },
+    ],
+  },
+   {
+    id: "pink-rose-vanila",
+    name: "Elegant Pink Rose Vanilla Cake ",
+    image: "/images/cake16.png",
+    description:
+      "A delicious vanilla sponge finished with creamy vanilla frosting, soft pink buttercream roses, and delicate pearl accents. Its elegant design makes it perfect for birthdays, celebrations, and memorable occasions.",
+    type: "cake",
+    category: "birthday",
+    variants: [
+      { label: "2 Pounds", price: 1600 },
+      { label: "3 Pounds", price: 3200 },
     ],
   },
 {
@@ -291,7 +291,7 @@ export const cakes: Product[] = [
   {
     id: "wedding-cake-one",
     name: "Royal Red Rose Two-Tier Cake",
-    image: "/images/cake17.jpeg",
+    image: "/images/cake-17.png",
     description:
       "A luxurious two-tier cake finished with smooth white frosting, elegant red roses, delicate baby's breath flowers, and rich burgundy ribbon accents. Perfect for weddings, anniversaries, and grand celebrations.",
     type: "cake",
@@ -303,7 +303,7 @@ export const cakes: Product[] = [
   {
     id: "wedding-cake-two",
     name: "Red Rose Butterfly Two-Tier Cake",
-    image: "/images/cake18.jpeg",
+    image: "/images/cake-18.png",
     description:
       "An elegant two-tier cake decorated with smooth white frosting, deep red roses, delicate greenery, and beautiful silver butterflies. A romantic and graceful choice for weddings and special occasions.",
     type: "cake",
@@ -387,7 +387,7 @@ export const cartoonThemeCake: Product[] = [
  {
     id: "barbie-cartoon-cake",
     name: "Barbie Dream Birthday Cake",
-    image: "/images/cart1.png",
+    image: "/images/cartoon-1.png",
     description:
       "A gorgeous Barbie-themed celebration cake decorated in beautiful shades of pink with Barbie details, sparkling stars, butterflies, golden accents, and a glamorous Barbie topper. Perfect for a magical birthday celebration.",
     type: "cake",
@@ -401,7 +401,7 @@ export const cartoonThemeCake: Product[] = [
   {
     id: "tom-and-jerry-cake",
     name: "Tom And Jerry Cartoon Cake",
-    image: "/images/cart2.png",
+    image: "/images/cartoon-2.png",
     description:
       "A fun Tom & Jerry themed birthday cake featuring playful cartoon character decorations, a smooth white cream finish, and charming black details. A perfect choice for fans of the classic cartoon duo.",
     type: "cake",
@@ -415,7 +415,7 @@ export const cartoonThemeCake: Product[] = [
   {
   id: "jungle-safari-cake",
   name: "🦁 Jungle Safari Adventure Cake",
-  image: "/images/cart7.jpeg",
+  image: "/images/cartoon-3.png",
   description:
     "A fun and colorful two-tier jungle-themed cake decorated with adorable safari animals, lush green grass, tropical leaves, and charming jungle details. Perfect for a little adventurer's birthday celebration.",
   type: "cake",
@@ -427,7 +427,7 @@ export const cartoonThemeCake: Product[] = [
 {
   id: "racing-car-birthday-cake",
   name: "Racing Car Birthday Cake",
-  image: "/images/cart9.png",
+  image: "/images/cartoon-4.png",
   description:
     "A fun racing car themed birthday cake decorated with a red sports car, checkered racing flags, speedometer, trophy, traffic lights, racing cones, stars, and colorful red and blue cream borders. Perfect for boys who love cars and racing.",
   type: "cake",
@@ -442,7 +442,7 @@ export const cartoonThemeCake: Product[] = [
 {
   id: "fairy-birthday-cake",
   name: "🧚‍♀️ Pink Fairy Butterfly Cake",
-  image: "/images/cart8.jpeg",
+  image: "/images/cartoon-7.png",
   description:
     "A dreamy two-tier cake decorated with a sweet fairy, delicate butterflies, pink accents, and golden details. A magical choice for a beautiful little girl's birthday.",
   type: "cake",
@@ -455,7 +455,7 @@ export const cartoonThemeCake: Product[] = [
   {
     id: "princess-cartoon-cake",
     name: "Princess Castle Birthday Cake",
-    image: "/images/cart3.png",
+    image: "/images/cartoon-8.png",
     description:
       "A beautiful princess-themed birthday cake decorated with a magical castle, elegant red roses, butterflies, balloons, and a charming princess design. Perfect for a fairytale-inspired celebration.",
     type: "cake",
@@ -470,7 +470,7 @@ export const cartoonThemeCake: Product[] = [
   {
     id: "doraemon-cartoon-cake",
     name: "Doraemon Adventure Cake",
-    image: "/images/cart4.png",
+    image: "/images/cartoon-6.png",
     description:
       "A bright and colorful Doraemon birthday cake featuring Doraemon and friends, playful cartoon toppers, and vibrant blue cream decoration. A fun and exciting choice for every Doraemon fan.",
     type: "cake",
@@ -485,7 +485,7 @@ export const cartoonThemeCake: Product[] = [
   {
     id: "fairy-butterfly-cartoon-cake",
     name: "Enchanted Fairy Butterfly Cake",
-    image: "/images/cart5.png",
+    image: "/images/cartoon-9.png",
     description:
       "A dreamy fairy-themed birthday cake decorated with beautiful purple butterflies, magical mushrooms, a sweet fairy character, and elegant lavender details. A perfect choice for a magical celebration.",
     type: "cake",
@@ -500,7 +500,7 @@ export const cartoonThemeCake: Product[] = [
   {
     id: "masha-and-bear-cake",
     name: "Masha And Bear Birthday Cake",
-    image: "/images/cart6.png",
+    image: "/images/cartoon-5.png",
     description:
       "A playful Masha & the Bear themed birthday cake featuring colorful character decorations, a large Masha design, butterflies, flowers, a cute number topper, and a cheerful pink finish.",
     type: "cake",
@@ -610,7 +610,7 @@ export const pastries: Product[] = [
   {
     id: "red-velvet-pastry",
     name: "Red Velvet Pastry",
-    image: "/images/past2.jpg",
+    image: "/images/pastry-2.png",
     description:
       "A rich and moist red velvet pastry layered with smooth cream and finished with elegant white frosting. A classic favorite for birthdays, celebrations, and everyday sweet cravings.",
     type: "pastries",

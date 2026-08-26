@@ -104,7 +104,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-text-light hover:text-accent-brown transition-colors"
+                  className="text-text-light hover:text-yellow-800 transition-colors"
                 >
                   Home
                 </Link>
@@ -113,7 +113,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/cakes"
-                  className="text-text-light hover:text-accent-brown transition-colors"
+                  className="text-text-light hover:text-yellow-800 transition-colors"
                 >
                   Our Cakes
                 </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-text-light hover:text-accent-brown transition-colors"
+                  className="text-text-light hover:text-yellow-800 transition-colors"
                 >
                   About Us
                 </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-text-light hover:text-accent-brown transition-colors"
+                  className="text-text-light hover:text-yellow-800 transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -155,7 +155,7 @@ export default function Footer() {
                 <Phone size={18} className="flex-shrink-0" />
                 <a
                   href="tel:+03073588816"
-                  className="hover:text-accent-brown transition-colors"
+                  className="hover:text-yellow-800 transition-colors"
                 >
                   +92 3073 588816
                 </a>
@@ -165,7 +165,7 @@ export default function Footer() {
                 <Mail size={18} className="flex-shrink-0" />
                 <a
                   href="mailto:mscakesandbakes@gmail.com"
-                  className="hover:text-accent-brown transition-colors"
+                  className="hover:text-yellow-800 transition-colors"
                 >
                   mscakesandbakes@gmail.com
                 </a>
