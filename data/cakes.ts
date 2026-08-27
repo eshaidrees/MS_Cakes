@@ -32,8 +32,8 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
   {
@@ -46,8 +46,8 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 900 },
-      { label: "2 Pounds", price: 1800 },
-      { label: "3 Pounds", price: 2700 },
+      { label: "2 Pounds", price: 1600 },
+      { label: "3 Pounds", price: 2500 },
     ],
   },
 
@@ -108,59 +108,17 @@ export const cakes: Product[] = [
   },
 
   {
-    id: "red-velvet",
-    name: "Classic Red Velvet Cake",
-    image: "/images/cake5.jpeg",
-    description:
-      "A delicious red velvet cake beautifully finished with creamy white frosting and delicate red heart accents, perfect for celebrating love and anniversaries.",
-    type: "cake",
-    category: "wedding",
-    variants: [
-      { label: "1 Pound", price: 1200 },
-      { label: "2 Pounds", price: 2400 },
-      { label: "3 Pounds", price: 3600 },
-    ],
-  },
-  {
-    id: "anniversary-cake",
-    name: "Forever Love Red Velvet Cake",
-    image: "/images/cake6.jpeg",
-    description:
-      "A decadent red velvet cake in a classic heart shape, finished with luxurious red frosting for a truly special celebration.",
-    type: "cake",
-    category: "wedding",
-    variants: [
-      { label: "1 Pound", price: 1200 },
-      { label: "2 Pounds", price: 2400 },
-      { label: "3 Pounds", price: 3600 },
-    ],
-  },
-  {
     id: "pineapple-cake",
     name: "Classic Pineapple Cake",
-    image: "/images/cake7.jpeg",
+    image: "/images/cake7.png",
     description:
       "A light and fluffy vanilla sponge layered with smooth, creamy frosting and delicious pineapple pieces. A refreshing, fruity favorite with the perfect balance of sweetness and tanginess.",
     type: "cake",
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1200 },
-      { label: "2 Pounds", price: 2400 },
-      { label: "3 Pounds", price: 3600 },
-    ],
-  },
-    {
-    id: "mango-cake",
-    name: "Fresh Mango Delight Cake",
-    image: "/images/cake8.jpeg",
-    description:
-      "A soft, moist sponge layered with creamy frosting and luscious mango filling. Topped with a rich mango glaze for a deliciously tropical and refreshing taste.",
-    type: "cake",
-    category: "birthday",
-    variants: [
-      { label: "1 Pound", price: 1200 },
-      { label: "2 Pounds", price: 2400 },
-      { label: "3 Pounds", price: 3600 },
+      { label: "2 Pounds", price: 2200 },
+      { label: "3 Pounds", price: 3200 },
     ],
   },
   {
@@ -173,8 +131,8 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
    {
@@ -187,8 +145,8 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1500 },
-      { label: "2 Pounds", price: 3000 },
-      { label: "3 Pounds", price: 4500 },
+      { label: "2 Pounds", price: 2700 },
+      { label: "3 Pounds", price: 3700 },
     ],
   },
   {
@@ -201,22 +159,22 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
   {
-    id: "vanila=anni",
-    name: "Red Rose Vanilla Cake ",
-    image: "/images/cake12.jpeg",
+    id: "mango-cake",
+    name: "Fresh Mango Delight Cake",
+    image: "/images/cake8.png",
     description:
-      "A soft and fluffy vanilla sponge covered with smooth vanilla frosting and beautifully decorated with delicate red buttercream roses. A romantic and elegant choice for anniversaries and special celebrations.",
+      "A soft, moist sponge layered with creamy frosting and luscious mango filling. Decorate with a rich mango pieces for a deliciously tropical and refreshing taste.",
     type: "cake",
-    category: "wedding",
+    category: "birthday",
     variants: [
-      { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2200 },
+      { label: "3 Pounds", price: 3200 },
     ],
   },
   {
@@ -229,8 +187,8 @@ export const cakes: Product[] = [
     category: "birthday",
     variants: [
       { label: "1 Pound", price: 1000 },
-      { label: "2 Pounds", price: 2000 },
-      { label: "3 Pounds", price: 3000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
   {
@@ -248,6 +206,34 @@ export const cakes: Product[] = [
   },
 
   // Wedding
+  {
+    id: "red-velvet",
+    name: "Classic Red Velvet Cake",
+    image: "/images/cake5.jpeg",
+    description:
+      "A delicious red velvet cake beautifully finished with creamy white frosting and delicate red heart accents, perfect for celebrating love and anniversaries.",
+    type: "cake",
+    category: "wedding",
+    variants: [
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2200 },
+      { label: "3 Pounds", price: 3200 },
+    ],
+  },
+  {
+    id: "anniversary-cake",
+    name: "Forever Love Red Velvet Cake",
+    image: "/images/cake6.jpeg",
+    description:
+      "A decadent red velvet cake in a classic heart shape, finished with luxurious red frosting for a truly special celebration.",
+    type: "cake",
+    category: "wedding",
+    variants: [
+      { label: "1 Pound", price: 1200 },
+      { label: "2 Pounds", price: 2200 },
+      { label: "3 Pounds", price: 3200 },
+    ],
+  },
   {
     id: "pink-vanila-heart",
     name: "Pink Rose Heart Vanilla Cake ",
@@ -273,6 +259,20 @@ export const cakes: Product[] = [
       { label: "1 Pound", price: 1200 },
       { label: "2 Pounds", price: 2400 },
       { label: "3 Pounds", price: 3600 },
+    ],
+  },
+   {
+    id: "vanila-anni",
+    name: "Red Rose Vanilla Cake ",
+    image: "/images/cake12.jpeg",
+    description:
+      "A soft and fluffy vanilla sponge covered with smooth vanilla frosting and beautifully decorated with delicate red buttercream roses. A romantic and elegant choice for anniversaries and special celebrations.",
+    type: "cake",
+    category: "wedding",
+    variants: [
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
   {
@@ -528,8 +528,8 @@ export const cupcakes: Product[] = [
     type: "cupcake",
     category: "cupcake",
     variants: [
-      { label: "6 Cupcakes", price: 800 },
-      { label: "12 Cupcakes", price: 1600 },
+      { label: "6 Cupcakes", price: 600 },
+      { label: "12 Cupcakes", price: 1200 },
     ],
   },
 
@@ -542,8 +542,8 @@ export const cupcakes: Product[] = [
     type: "cupcake",
     category: "cupcake",
     variants: [
-      { label: "6 Cupcakes", price: 800 },
-      { label: "12 Cupcakes", price: 1600 },
+      { label: "6 Cupcakes", price: 600 },
+      { label: "12 Cupcakes", price: 1200 },
     ],
   },
 
@@ -556,8 +556,8 @@ export const cupcakes: Product[] = [
     type: "cupcake",
     category: "cupcake",
     variants: [
-      { label: "6 Cupcakes", price: 800 },
-      { label: "12 Cupcakes", price: 1600 },
+      { label: "6 Cupcakes", price: 600 },
+      { label: "12 Cupcakes", price: 1200 },
     ],
   },
 
@@ -570,8 +570,8 @@ export const cupcakes: Product[] = [
     type: "cupcake",
     category: "cupcake",
     variants: [
-      { label: "6 Cupcakes", price: 800 },
-      { label: "12 Cupcakes", price: 1600 },
+      { label: "6 Cupcakes", price: 600 },
+      { label: "12 Cupcakes", price: 1200 },
     ],
   },
   {
@@ -583,8 +583,8 @@ export const cupcakes: Product[] = [
     type: "cupcake",
     category: "cupcake",
     variants: [
-      { label: "6 Cupcakes", price: 800 },
-      { label: "12 Cupcakes", price: 1600 },
+      { label: "6 Cupcakes", price: 600 },
+      { label: "12 Cupcakes", price: 1200 },
     ],
   },
 ];
@@ -602,8 +602,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 1200 },
-        { label: "12 Pastry", price: 2400 },
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
     ],
   },
 
@@ -616,8 +616,8 @@ export const pastries: Product[] = [
     type: "pastries",
     category: "pastries",
     variants: [
-        { label: "6 Pastry", price: 1200 },
-        { label: "12 Pastry", price: 2400 },
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
     ],
   },
 
@@ -671,8 +671,8 @@ export const pastries: Product[] = [
     type: "cake",
     category: "brownies",
     variants: [
-      { label: "6 Brownies", price: 1200 },
-      { label: "12 Brownies", price: 2400 },
+        { label: "6 Pastry", price: 900 },
+        { label: "12 Pastry", price: 1800 },
     ],
   },
    {

@@ -56,7 +56,7 @@ export default function ContactPageContent() {
               <input
                 type="hidden"
                 name="access_key"
-                value="814718bb-47d7-41bf-aa06-d10452d13958"
+                value="7c9d0889-ffed-40dd-9931-34e8e24b68ed"
               />
 
               {/* Subject */}
@@ -169,7 +169,7 @@ export default function ContactPageContent() {
             {/* WhatsApp */}
             <div className="mt-6">
               <a
-                href="https://wa.me/923198531082"
+                href="https://wa.me/923073588816"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 py-4 font-semibold text-white transition-all duration-200 hover:bg-green-700"
@@ -201,7 +201,7 @@ export default function ContactPageContent() {
                     </h3>
 
                     <p className="text-text-light">
-                      03198531082
+                      03073588816
                     </p>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ export default function ContactPageContent() {
                     </h3>
 
                     <p className="text-text-light">
-                      eshaidrees190@gmail.com
+                      mscakesandbakes20@gmail.com
                     </p>
                   </div>
                 </div>
