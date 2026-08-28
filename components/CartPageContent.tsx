@@ -16,7 +16,7 @@ export default function CartPageContent() {
   } = useCart();
 
  const handleWhatsAppOrder = () => {
-  const phoneNumber = "923198531082";
+  const phoneNumber = "923073588816";
 
   const WEBSITE_URL =
     "https://mscakesandbakes.vercel.app";

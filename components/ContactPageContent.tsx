@@ -233,29 +233,68 @@ export default function ContactPageContent() {
 
               <div className="flex gap-4">
 
-                <a
-                  href="#"
-                  aria-label="Facebook"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-primary/20 transition-colors hover:bg-pink-primary/40"
+                 {/* Social Media */}
+            <div className="flex gap-3">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MS Cakes on Instagram"
+                className="w-10 h-10 rounded-full bg-pink-primary/30 flex items-center justify-center hover:bg-pink-500 hover:text-white transition-all"
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <span className="text-2xl">📘</span>
-                </a>
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
 
-                <a
-                  href="#"
-                  aria-label="Instagram"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-primary/20 transition-colors hover:bg-pink-primary/40"
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MS Cakes on TikTok"
+                className="w-10 h-10 rounded-full bg-pink-primary/30 flex items-center justify-center hover:bg-black hover:text-white transition-all"
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
-                  <span className="text-2xl">📷</span>
-                </a>
+                  <path d="M19.5 8.2a5.3 5.3 0 0 1-3.2-1.1v7.2a5.7 5.7 0 1 1-4.9-5.6v2.9a2.8 2.8 0 1 0 2 2.7V2h2.9c.2 1.6 1.5 2.9 3.2 3.2v3z" />
+                </svg>
+              </a>
 
-                <a
-                  href="#"
-                  aria-label="Pinterest"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-primary/20 transition-colors hover:bg-pink-primary/40"
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MS Cakes on Facebook"
+                className="w-10 h-10 rounded-full bg-pink-primary/30 flex items-center justify-center hover:bg-blue-700 hover:text-white transition-all"
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
-                  <span className="text-2xl">📌</span>
-                </a>
+                  <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3.5l.5-4H13V9c0-.7.3-1 1-1z" />
+                </svg>
+              </a>
+            </div>
 
               </div>
             </div>

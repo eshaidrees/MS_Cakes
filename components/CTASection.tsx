@@ -3,10 +3,13 @@ import Link from "next/link";
 export default function CTASection() {
   return (
     <section className="relative overflow-hidden bg-accent-brown py-20">
+      {/* Background Decorations */}
       <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5" />
       <div className="absolute -bottom-32 -right-20 h-96 w-96 rounded-full bg-white/5" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center lg:px-12">
+
+        {/* Heading */}
         <p className="mb-4 text-sm font-medium tracking-[0.25em] text-white/80">
           FRESHLY BAKED • MADE WITH LOVE
         </p>
@@ -21,6 +24,7 @@ export default function CTASection() {
 
         {/* Order Options */}
         <div className="mx-auto mb-10 grid max-w-3xl gap-5 sm:grid-cols-2">
+
           {/* Pickup */}
           <div className="rounded-2xl border border-white/20 bg-white/10 p-7 backdrop-blur-sm">
             <div className="mb-3 text-3xl">🎂</div>
@@ -31,7 +35,7 @@ export default function CTASection() {
 
             <p className="mt-2 text-sm leading-6 text-white/75">
               Place your order and pick it up fresh from our location
-              at your convenience.
+              when it is ready.
             </p>
           </div>
 
@@ -44,14 +48,21 @@ export default function CTASection() {
             </h3>
 
             <p className="mt-2 text-sm leading-6 text-white/75">
-              Enjoy your favorite treats delivered fresh and safely
-              right to your doorstep.
+              Get your favorite treats delivered fresh and safely
+              to your doorstep.
+            </p>
+
+            {/* Delivery Charges */}
+            <p className="mt-4 border-t border-white/15 pt-4 text-xs leading-5 text-white/75">
+              Delivery charges depend on your location and are paid
+              separately to the delivery person when you receive your order.
             </p>
           </div>
         </div>
 
         {/* Buttons */}
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
           <Link
             href="/cakes"
             className="rounded-full bg-white px-10 py-4 font-semibold text-accent-brown shadow-md transition-all duration-300 hover:bg-cream hover:shadow-lg"
@@ -65,6 +76,7 @@ export default function CTASection() {
           >
             Order Now
           </Link>
+
         </div>
       </div>
     </section>

@@ -65,6 +65,20 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 3600 },
     ],
   },
+  {
+  id: "classic-vanilla-bow-cake",
+  name: "Classic Vanilla Ribbon Cake",
+  image: "/images/cake26.png",
+  description:
+    "A beautiful half-and-half vanilla cake featuring two elegant cream-finished sections, delicate piped borders, soft ribbon bows, and subtle pearl details. A simple yet stylish choice for birthdays, anniversaries, and special celebrations.",
+  type: "cake",
+  category: "birthday",
+  variants: [
+    { label: "2 Pounds", price: 1800 },
+    { label: "3 Pounds", price: 2700 },
+    { label: "4 Pounds", price: 3600 },
+  ],
+},
    {
     id: "pink-rose-vanila",
     name: "Elegant Pink Rose Vanilla Cake ",
@@ -106,7 +120,20 @@ export const cakes: Product[] = [
       { label: "3 Pounds", price: 2700 },
     ],
   },
-
+{
+  id: "classic-pineapple-rectangle-cake",
+  name: "Classic Pineapple Rectangle Cake",
+  image: "/images/cake27.png",
+  description:
+    "A delicious rectangular pineapple cake covered with smooth cream and beautifully decorated with classic piped borders, elegant white ribbon bows, and delicate golden pearl details. A graceful and timeless design for birthdays and special occasions.",
+  type: "cake",
+  category: "birthday",
+  variants: [
+    { label: "2 Pounds", price: 1800 },
+    { label: "3 Pounds", price: 2800 },
+    { label: "4 Pounds", price: 3800 },
+  ],
+},
   {
     id: "pineapple-cake",
     name: "Classic Pineapple Cake",
@@ -215,9 +242,9 @@ export const cakes: Product[] = [
     type: "cake",
     category: "wedding",
     variants: [
-      { label: "1 Pound", price: 1200 },
-      { label: "2 Pounds", price: 2200 },
-      { label: "3 Pounds", price: 3200 },
+      { label: "1 Pound", price: 1000 },
+      { label: "2 Pounds", price: 1800 },
+      { label: "3 Pounds", price: 2800 },
     ],
   },
   {
