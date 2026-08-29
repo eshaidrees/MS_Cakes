@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="flex gap-3">
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/mscakesandbakes20"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MS Cakes on Instagram"
@@ -58,7 +58,7 @@ export default function Footer() {
 
               {/* TikTok */}
               <a
-                href="https://www.tiktok.com/"
+                href="https://www.tiktok.com/@ms.cakes.and.bake"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MS Cakes on TikTok"
@@ -76,7 +76,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/mscakesnbakes"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MS Cakes on Facebook"
