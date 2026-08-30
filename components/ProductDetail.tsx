@@ -67,7 +67,7 @@ export default function ProductDetail({
 
   const handleWhatsAppOrder = () => {
 
-   const phoneNumber = "923198531082";
+   const phoneNumber = "923073588816";
 
     const message = `Hi! I would like to order a custom cake.
 
