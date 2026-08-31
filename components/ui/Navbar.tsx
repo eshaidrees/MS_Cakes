@@ -192,9 +192,10 @@ function CartDrawer() {
     const phoneNumber = "923073588816";
 
     let message = "🎂 *New Order from MS Cakes & Bakes*\n\n";
-
+    
+    message += "_____________________\n"
     message += "🛒 *ORDER DETAILS*\n";
-
+    message += "_____________________\n"
     cart.forEach((item) => {
       message += `🍰 *${item.name}*\n`;
 
