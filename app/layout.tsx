@@ -3,7 +3,8 @@ import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer"
+import Footer from "@/components/ui/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -19,7 +20,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "MS Cakes And Bakes - Handcrafted with Love",
-  description: "Delicious homemade cakes for all your special occasions. Birthday, wedding, custom cakes and more!",
+  description:
+    "Delicious homemade cakes for all your special occasions. Birthday, wedding, custom cakes and more!",
   icons: {
     icon: "/images/logo.jpeg",
   },
@@ -37,10 +39,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>
-          <Navbar/>
+          <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </CartProvider>
+
+        <Analytics />
       </body>
     </html>
   );
